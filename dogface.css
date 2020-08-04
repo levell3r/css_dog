@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgb(14, 153, 67);
+  overflow:hidden;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(6deg);
+    }
+  }
+
+@keyframes look {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(6deg);
+    }
+  } 
+
+ 
+:root {
+    --dog-color: #f5eabd;
+    --inner-shadow: #b4b3aa;
+    --outer-shadow: #61605d;
+}
+
+.sky {
+    position: absolute;
+    top: 0px;
+    height: 50vh;
+    width: 100vw;
+    background-image: linear-gradient(to top, #00c6fb 0%, #054cbe 100%);
+}
+
+.dog {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%,-50%);
+}
+
+
+.face {
+  width: 300px;
+  height: 330px;
+  background: var(--dog-color);
+  background-image: radial-gradient(circle at top right, var(--dog-color)70%,var(--outer-shadow));
+  box-shadow: 1px 1px 3px #888787;
+  position: absolute;
+  border-radius: 35% 35% 75% 75%;
+  transform: rotate(7deg);
+  top: -135px;
+  left: -147px;
+  animation: rotation 2s infinite linear;
+}
+
+.eye {
+    width: 115px;
+    height:130px;
+    background: #c9ccd3d2;
+    background-image: linear-gradient(-180deg, rgba(255, 255, 255, 0.623) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;    border-radius: 100%;
+
+}
+
+.eyeleft {
+    position: absolute;
+    top: 55px;
+    left: 31px;
+}
+.eyeright {
+    position: absolute;
+    top: 50px;
+    left: 162px;
+}
+.pupil {
+    width: 45px;
+    height:45px;
+    background: #131314;
+    background-image: linear-gradient(-180deg, rgba(112, 106, 106, 0.5) 0%, rgba(0,0,0,0.50) 100%);
+    background-blend-mode: lighten;    border-radius: 100%;
+}
+.pupilleft {
+    position: absolute;
+    top: 110px;
+    left: 37px;
+}
+.pupilright {
+    position: absolute;
+    top: 110px;
+    left: 172px;
+}
+
+.ear {
+    width: 100px;
+    height:250px;
+    background: var(--dog-color);
+    background-image: radial-gradient(circle, var(--dog-color)30%, var(--outer-shadow)160%);
+    box-shadow: 1px 1px 3px #888787;
+    border-radius: 35% 45% 75% 75%;  
+
+}
+
+.earleft {
+    position: absolute;
+    top: 5px;
+    left: -75px;
+    transform: rotate(10deg);
+    animation: rotation 0.5s infinite linear;
+ 
+}
+.earright {
+    position: absolute;
+    top: 5px;
+    left: 272px;
+    transform: rotate(-10deg);
+    animation: rotation 1s infinite linear;
+ 
+}
+
+.dogbody {
+    width: 350px;
+    height: 410px;
+    background: var(--dog-color);
+    background-image: radial-gradient(circle at bottom left, var(--dog-color)70%, rgba(0,0,0,0.50));
+    /* box-shadow: 10px 10px 10px 10px #888888;  */ position: absolute;
+    border-radius: 35% 35% 75% 75%;
+    transform: rotate(180deg);
+    top: 105px;
+    left: -147px;
+  }
+
+.nose {
+    width: 85px;
+    height: 55px;
+    background: brown;
+    background-image: radial-gradient(circle at bottom right,brown,70%, rgba(0,0,0,0.50));
+    box-shadow: 4px 2px 5px #888787;
+    position: absolute;
+    border-radius: 35% 35% 75% 75%;
+    top: 165px;
+    left: 100px;
+}
+
+.mouth {
+    position: relative;
+    width: 200px;
+    left: 50px;
+    height: 200px;
+    border: 10px solid transparent;
+    border-radius: 50%;
+    top: 44px;
+    border-bottom-color: #000;
+}
+
+.tongue {
+    width: 55px;
+    height: 63px;
+    background: rgb(199, 39, 79);
+    background-image: radial-gradient(circle at bottom right,rgb(199, 39, 79),70%, rgba(0,0,0,0.50));
+    box-shadow: 4px 2px 5px #888787;
+    position: absolute;
+    border-radius: 35% 35% 75% 75%;
+    top: 253px;
+    left: 145px;
+}
+
+
+.frontleg {
+    width: 100px;
+    height:200px;
+    background: var(--dog-color);
+    background-image: radial-gradient(circle, var(--dog-color)50%, var(--outer-shadow)160%);
+    box-shadow: 1px 1px 3px #888787;
+    border-radius: 47% 47% 25% 25%;  
+}
+
+.frontlegleft {
+    position: absolute;
+    top: 230px;
+    left: -130px;
+    transform: rotate(4deg);
+ 
+}
+.frontlegright {
+    position: absolute;
+    top: 210px;
+    left: 82px;
+    transform: rotate(-10deg);
+ 
+}
+
+.pawline {
+    width:30px;
+    height:20px;
+    background: transparent;
+    border: 5px solid transparent;
+    border-bottom-color: rgba(0, 0, 0, 0.205);
+}
+
+.pawline1 {
+    position: absolute;
+    top: 392px;
+    left: -149px;
+    transform: rotate(-81deg);
+}
+
+.pawline2 {
+    position: absolute;
+    top: 399px;
+    left: -126px;
+    transform: rotate(-90deg);
+}
+
+.pawline3 {
+    position: absolute;
+    top: 398px;
+    left: -102px;
+    transform: rotate(-90deg);
+}
+.pawline4 {
+    position: absolute;
+    top: 379px;
+    left: 93px;
+    transform: rotate(-90deg);
+}
+
+.pawline5 {
+    position: absolute;
+    top: 377px;
+    left: 115px;
+    transform: rotate(-90deg);
+}
+
+.pawline6 {
+    position: absolute;
+    top: 373px;
+    left: 139px;
+    transform: rotate(-99deg);
+}
