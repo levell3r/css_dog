@@ -15,16 +15,6 @@ body {
       transform: rotate(6deg);
     }
   }
-
-@keyframes look {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(6deg);
-    }
-  } 
-
  
 :root {
     --dog-color: #f5eabd;
